@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta http-equiv="refresh" content="0; url=ifood://www.ifood.com.br/delivery/belem-pa/porteno-empanadas-y-choripanes-nazare/29469414-92fb-4815-ad70-437a067a29d5?utm_medium=share" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3; url=ifood://www.ifood.com.br/delivery/belem-pa/porteno-empanadas-y-choripanes-nazare/29469414-92fb-4815-ad70-437a067a29d5?utm_medium=share">
     <title>Redirecionando para iFood...</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ea1d2c, #ff6b6b);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .logo {
+            width: 120px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background: white;
+            color: #ea1d2c;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin: 30px auto;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <p>Se o app iFood não abrir, <a href="ifood://www.ifood.com.br/delivery/belem-pa/porteno-empanadas-y-choripanes-nazare/29469414-92fb-4815-ad70-437a067a29d5?utm_medium=share">clique aqui</a>.</p>
+    <div class="container">
+        <img src="https://logodownload.org/wp-content/uploads/2017/05/ifood-logo.png" alt="iFood" class="logo">
+        <h1>Abrindo seu pedido no iFood...</h1>
+        <p>Se o redirecionamento não funcionar automaticamente, clique no botão abaixo.</p>
+        <div class="spinner"></div>
+        <a href="ifood://www.ifood.com.br/delivery/belem-pa/porteno-empanadas-y-choripanes-nazare/29469414-92fb-4815-ad70-437a067a29d5?utm_medium=share" class="btn">ABRIR NO APP</a>
+    </div>
 </body>
 </html>
